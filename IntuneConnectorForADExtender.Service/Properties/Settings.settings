@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="IntuneConnectorForADExtender.Service.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PSScript" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ODJ-Extender.ps1</Value>
+    </Setting>
+    <Setting Name="EventIdToMonitor" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">30130</Value>
+    </Setting>
+    <Setting Name="LogName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ODJ Connector Service</Value>
+    </Setting>
+    <Setting Name="LogSource" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ODJ Connector Service Source</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
