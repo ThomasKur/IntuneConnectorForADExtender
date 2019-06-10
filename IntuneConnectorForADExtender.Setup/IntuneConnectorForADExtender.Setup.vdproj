@@ -69,42 +69,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_8A842E7C04C0A1D01F4968DBD2FF0DE2"
-        "OwnerKey" = "8:_CEDB485219A1917669E6C58021E3679E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_8A842E7C04C0A1D01F4968DBD2FF0DE2"
-        "OwnerKey" = "8:_617FB8B570F441E3A06FF6D98D1C52F7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_8A842E7C04C0A1D01F4968DBD2FF0DE2"
-        "OwnerKey" = "8:_008E6BF04D3A445CB503E9ABDB1991A5"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_8ABFFFDD2B8CDBC7B1152A76AC3568AE"
-        "OwnerKey" = "8:_CEDB485219A1917669E6C58021E3679E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_8ABFFFDD2B8CDBC7B1152A76AC3568AE"
-        "OwnerKey" = "8:_617FB8B570F441E3A06FF6D98D1C52F7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_8ABFFFDD2B8CDBC7B1152A76AC3568AE"
-        "OwnerKey" = "8:_008E6BF04D3A445CB503E9ABDB1991A5"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_8F78397E5B149B0EBED80E6DAB4C6A1E"
         "OwnerKey" = "8:_008E6BF04D3A445CB503E9ABDB1991A5"
         "MsmSig" = "8:_UNDEFINED"
@@ -112,7 +76,7 @@
         "Entry"
         {
         "MsmKey" = "8:_8F78397E5B149B0EBED80E6DAB4C6A1E"
-        "OwnerKey" = "8:_8A842E7C04C0A1D01F4968DBD2FF0DE2"
+        "OwnerKey" = "8:_E504B5721B80451419BB302C43C6F79E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -123,44 +87,74 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_CAD39FF5018F265F238C6FE0A70ACC98"
-        "OwnerKey" = "8:_CEDB485219A1917669E6C58021E3679E"
+        "MsmKey" = "8:_9D777AD973EF5BC6FCA2456D58CC873E"
+        "OwnerKey" = "8:_D99661FA9362D25B811A508208DAA8EA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_CAD39FF5018F265F238C6FE0A70ACC98"
+        "MsmKey" = "8:_9D777AD973EF5BC6FCA2456D58CC873E"
         "OwnerKey" = "8:_617FB8B570F441E3A06FF6D98D1C52F7"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_CAD39FF5018F265F238C6FE0A70ACC98"
+        "MsmKey" = "8:_9D777AD973EF5BC6FCA2456D58CC873E"
         "OwnerKey" = "8:_008E6BF04D3A445CB503E9ABDB1991A5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_CEDB485219A1917669E6C58021E3679E"
-        "OwnerKey" = "8:_008E6BF04D3A445CB503E9ABDB1991A5"
+        "MsmKey" = "8:_9DF4902CF4D52CFED02EB62F01B5ADF7"
+        "OwnerKey" = "8:_D99661FA9362D25B811A508208DAA8EA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_CEDB485219A1917669E6C58021E3679E"
+        "MsmKey" = "8:_9DF4902CF4D52CFED02EB62F01B5ADF7"
         "OwnerKey" = "8:_617FB8B570F441E3A06FF6D98D1C52F7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9DF4902CF4D52CFED02EB62F01B5ADF7"
+        "OwnerKey" = "8:_008E6BF04D3A445CB503E9ABDB1991A5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D99661FA9362D25B811A508208DAA8EA"
+        "OwnerKey" = "8:_008E6BF04D3A445CB503E9ABDB1991A5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D99661FA9362D25B811A508208DAA8EA"
+        "OwnerKey" = "8:_617FB8B570F441E3A06FF6D98D1C52F7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E504B5721B80451419BB302C43C6F79E"
+        "OwnerKey" = "8:_D99661FA9362D25B811A508208DAA8EA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E504B5721B80451419BB302C43C6F79E"
+        "OwnerKey" = "8:_617FB8B570F441E3A06FF6D98D1C52F7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E504B5721B80451419BB302C43C6F79E"
+        "OwnerKey" = "8:_008E6BF04D3A445CB503E9ABDB1991A5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_73A05B733BC0019398EA08EE01B14997"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CEDB485219A1917669E6C58021E3679E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -184,19 +178,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_8ABFFFDD2B8CDBC7B1152A76AC3568AE"
+        "OwnerKey" = "8:_D99661FA9362D25B811A508208DAA8EA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_8A842E7C04C0A1D01F4968DBD2FF0DE2"
+        "OwnerKey" = "8:_9D777AD973EF5BC6FCA2456D58CC873E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CAD39FF5018F265F238C6FE0A70ACC98"
+        "OwnerKey" = "8:_E504B5721B80451419BB302C43C6F79E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9DF4902CF4D52CFED02EB62F01B5ADF7"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -430,68 +430,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8A842E7C04C0A1D01F4968DBD2FF0DE2"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_8A842E7C04C0A1D01F4968DBD2FF0DE2"
-                    {
-                    "Name" = "8:System.Management.Automation.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:System.Management.Automation.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_C562008C03DC4FCFBBF9384150EA2243"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8ABFFFDD2B8CDBC7B1152A76AC3568AE"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_8ABFFFDD2B8CDBC7B1152A76AC3568AE"
-                    {
-                    "Name" = "8:log4net.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:log4net.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_C562008C03DC4FCFBBF9384150EA2243"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8F78397E5B149B0EBED80E6DAB4C6A1E"
             {
             "AssemblyRegister" = "3:1"
@@ -523,14 +461,45 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CAD39FF5018F265F238C6FE0A70ACC98"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9D777AD973EF5BC6FCA2456D58CC873E"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_9D777AD973EF5BC6FCA2456D58CC873E"
+                    {
+                    "Name" = "8:log4net.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:log4net.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_C562008C03DC4FCFBBF9384150EA2243"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9DF4902CF4D52CFED02EB62F01B5ADF7"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_CAD39FF5018F265F238C6FE0A70ACC98"
+                    "_9DF4902CF4D52CFED02EB62F01B5ADF7"
                     {
                     "Name" = "8:Newtonsoft.Json.dll"
                     "Attributes" = "3:512"
@@ -554,20 +523,51 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CEDB485219A1917669E6C58021E3679E"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D99661FA9362D25B811A508208DAA8EA"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:IntuneConnectorForADExtender.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_CEDB485219A1917669E6C58021E3679E"
+                    "_D99661FA9362D25B811A508208DAA8EA"
                     {
                     "Name" = "8:IntuneConnectorForADExtender.Core.dll"
                     "Attributes" = "3:512"
                     }
                 }
             "SourcePath" = "8:IntuneConnectorForADExtender.Core.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_C562008C03DC4FCFBBF9384150EA2243"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E504B5721B80451419BB302C43C6F79E"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_E504B5721B80451419BB302C43C6F79E"
+                    {
+                    "Name" = "8:System.Management.Automation.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.Management.Automation.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_C562008C03DC4FCFBBF9384150EA2243"
@@ -641,15 +641,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Intune Connector for AD Extender"
-        "ProductCode" = "8:{FF345146-BD27-43F0-8251-AEC40C3E982D}"
-        "PackageCode" = "8:{A25D721B-7B3C-4162-986C-867A441B748E}"
+        "ProductCode" = "8:{E6FCC90E-03A7-4046-B5F4-B7D284103CB5}"
+        "PackageCode" = "8:{92272307-E348-4D30-BB5F-7482AD2A3030}"
         "UpgradeCode" = "8:{F1B2A247-01D3-456C-B816-C7B8CB513901}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.2"
+        "ProductVersion" = "8:1.0.3"
         "Manufacturer" = "8:baseVISION"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -1177,7 +1177,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_008E6BF04D3A445CB503E9ABDB1991A5"
             {
-            "SourcePath" = "8:..\\IntuneConnectorForADExtender.Service\\obj\\Debug\\IntuneConnectorForADExtender.Service.exe"
+            "SourcePath" = "8:..\\IntuneConnectorForADExtender.Service\\obj\\Release\\IntuneConnectorForADExtender.Service.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_C562008C03DC4FCFBBF9384150EA2243"
@@ -1205,7 +1205,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_617FB8B570F441E3A06FF6D98D1C52F7"
             {
-            "SourcePath" = "8:..\\IntuneConnectorForADExtender.ConsoleApp\\obj\\Debug\\IntuneConnectorForADExtender.ConsoleApp.exe"
+            "SourcePath" = "8:..\\IntuneConnectorForADExtender.ConsoleApp\\obj\\Release\\IntuneConnectorForADExtender.ConsoleApp.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_C562008C03DC4FCFBBF9384150EA2243"

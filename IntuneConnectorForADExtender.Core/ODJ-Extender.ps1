@@ -2,14 +2,13 @@
 .DESCRIPTION
 This script will handle additional actions on Hybrid join:
     - AD Computer account to specific AD group
-    - Check if there are existing Computer Objects for the same Serial Number then remove them. Otherwise the rename on this device will fail.
 
 .EXAMPLE
 
 
 .NOTES
 Author: Thomas Kurth/baseVISION
-Date:   04.06.2019
+Date:   10.06.2019
 
 History
     001: First Version
@@ -268,10 +267,13 @@ try{
     throw "Input is not formatted in JSON."
 }
 try{
-    Write-Log "Adding '$($EventData2.Metric.Dimensions.MachineName)' to AD group 'sg-MdWP-Computers'"
-    ADD-ADGroupMember "sg-MdWP-Computers" –members $EventData2.Metric.Dimensions.MachineName
+    $TargetGroup = "sg-Intune-Computers"
+    Write-Log "Getting computer object with the name '$($EventData2.Metric.Dimensions.MachineName)' in the AD"
+    $adComputer = Get-ADComputer -Identity $EventData2.Metric.Dimensions.MachineName
+    Write-Log "Adding '$($adComputer.DistinguishedName)' to AD group '$TargetGroup'"
+    ADD-ADGroupMember $TargetGroup –members $adComputer
 } catch {
-    Write-Log "Failed to add '$($EventData2.Metric.Dimensions.MachineName)' to AD group 'sg-MdWP-Computers'" -Type Error -Exception $_.Exception
+    Write-Log "Failed to add '$($EventData2.Metric.Dimensions.MachineName)' to AD group '$TargetGroup'" -Type Error -Exception $_.Exception
 }
 
 
