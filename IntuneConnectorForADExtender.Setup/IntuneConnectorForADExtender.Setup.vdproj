@@ -527,7 +527,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:IntuneConnectorForADExtender.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:IntuneConnectorForADExtender.Core, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_D99661FA9362D25B811A508208DAA8EA"
@@ -641,15 +641,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Intune Connector for AD Extender"
-        "ProductCode" = "8:{E6FCC90E-03A7-4046-B5F4-B7D284103CB5}"
-        "PackageCode" = "8:{92272307-E348-4D30-BB5F-7482AD2A3030}"
+        "ProductCode" = "8:{2CE68511-9F51-4195-ABE5-13876B4DA7D1}"
+        "PackageCode" = "8:{22B453E6-BBBA-47A3-8F4D-2C954FCC0C09}"
         "UpgradeCode" = "8:{F1B2A247-01D3-456C-B816-C7B8CB513901}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.3"
+        "ProductVersion" = "8:1.0.4"
         "Manufacturer" = "8:baseVISION"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
