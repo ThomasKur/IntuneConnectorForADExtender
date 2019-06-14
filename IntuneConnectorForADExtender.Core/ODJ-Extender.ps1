@@ -23,7 +23,7 @@ ExitCodes:
 Param(
     [String]$EventData
 )
-## Manual Variable Definition
+#region Manual Variable Definition
 ########################################################
 $DebugPreference = "Continue"
 $ScriptVersion = "001"
@@ -32,12 +32,11 @@ $ScriptName = "IntuneConnectorForADExtender-PS"
 $LogFilePathFolder     = $env:TEMP
 $FallbackScriptPath    = "C:\Windows" # This is only used if the filename could not be resolved(IE running in ISE)
 
-
 # Log Configuration
 $DefaultLogOutputMode  = "Console-LogFile" # "Console-LogFile","Console-WindowsEvent","LogFile-WindowsEvent","Console","LogFile","WindowsEvent","All"
 $DefaultLogWindowsEventSource = $ScriptName
 $DefaultLogWindowsEventLog = "CustomPS"
- 
+#endregion 
 #region Functions
 ########################################################
 
@@ -256,25 +255,20 @@ try{
 New-Folder $LogFilePathFolder
 Write-Log "Start Script $Scriptname"
 
+try{
+    $EventData2 = $EventData | ConvertFrom-Json -ErrorAction stop
+    $DeviceName = $EventData2.Metric.Dimensions.MachineName
+    $DeviceId   = $EventData2.Metric.Dimensions.DeviceId
+    Write-Log "Using DeviceName $DeviceName and Intune DeviceID $DeviceId"
+} catch {
+    throw "Input is not formatted in JSON."
+}
 
 #endregion
 
 #region Main Script
 ########################################################
-try{
-    $EventData2 = $EventData | ConvertFrom-Json -ErrorAction stop
-} catch {
-    throw "Input is not formatted in JSON."
-}
-try{
-    $TargetGroup = "sg-Intune-Computers"
-    Write-Log "Getting computer object with the name '$($EventData2.Metric.Dimensions.MachineName)' in the AD"
-    $adComputer = Get-ADComputer -Identity $EventData2.Metric.Dimensions.MachineName
-    Write-Log "Adding '$($adComputer.DistinguishedName)' to AD group '$TargetGroup'"
-    ADD-ADGroupMember $TargetGroup –members $adComputer
-} catch {
-    Write-Log "Failed to add '$($EventData2.Metric.Dimensions.MachineName)' to AD group '$TargetGroup'" -Type Error -Exception $_.Exception
-}
+
 
 
 #endregion
