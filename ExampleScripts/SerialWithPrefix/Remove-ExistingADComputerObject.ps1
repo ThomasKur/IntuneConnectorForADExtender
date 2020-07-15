@@ -2,13 +2,71 @@
 # This example will work only when you use a Prefix and the serial Name as Computername.
 
 #region Add this region to the configuration section of the existing ODJ-Extender Script
-$upn = "intune.svc@kurcontoso.ch"
-$passWD = "01000000d08c9ddfasdasd77f7f228164e30000000002000000000010660234238993c5d39482a16f41cc129f79245def666935f449b9bbb25d924e652d0a720008967986679000200000001b68dd8723765f65111403969403b4c105573f1821de5757bdd80e1a8e92a88630000000a215aea947d3b7ce63eef9f4a1397a1d76f627733f8cc0f14a36acbf1a63e1dcf8ed3090566d68be11f170cf6226aaef4000000044dc72c8d3ea5cf82cdce6ca8096360e76f2ef8f1ba848c13c31bc78621cf3eed81ee1add96caad871d4baa91387bdb139baba0cad721c4503eec1c961c47d1c"
+$upn = "intune@kurcontoso.ch"
+$passWD = "01000000d08casdfasdasd77f7f228164e30000000002000000000010660234238993c5d39482a16f41cc129f79245def666935f449b9bbb25d924e652d0a720008967986679000200000001b68dd8723765f65111403969403b4c105573f1821de5757bdd80e1a8e92a88630000000a215aea947d3b7ce63eef9f4a1397a1d76f627733f8cc0f14a36acbf1a63e1dcf8ed3090566d68be11f170cf6226aaef4000000044dc72c8d3ea5cf82cdce6ca8096360e76f2ef8f1ba848c13c31bc78621cf3eed81ee1add96caad871d4baa91387bdb139baba0cad721c4503eec1c961c47d1c"
 $ComputerNamePrefix = "KUR-" # This will be added in front of the Serial Number
 $maxDevicesToDelete = 3
 $MaxRetries = 25
 $RetryDelay = 5 # Seconds
+$ttlcache = 45 # Stop script if executed in this time window multiple times minutes
 
+#endregion
+
+#region Add this region to the Functions region of the existing ODJ-Extender Script
+function Add-SerialToCache {
+    param(
+        [Parameter(Mandatory=$True)]
+        [string]$Serial
+    )
+    $cacheObj = Get-Content "$($env:TEMP)\ODJ-Extender-Cache.json" -ErrorAction SilentlyContinue | ConvertFrom-Json
+    if($cacheObj -eq $null){
+        $cache = @{}
+    } else {
+        $cache = @{}
+        foreach ($property in $cacheObj.PSObject.Properties) {
+            $cache[$property.Name] = $property.Value
+        }
+    }
+    if($cache.ContainsKey($Serial)){
+        $cache[$Serial] = [DateTime](Get-Date -DisplayHint DateTime)
+    } else {
+        $cache.Add($Serial,(Get-Date -DisplayHint DateTime))
+    }
+    $cache | ConvertTo-Json | Out-File -FilePath "$($env:TEMP)\ODJ-Extender-Cache.json"
+}
+
+function Invoke-CheckCache {
+    param(
+        [Parameter(Mandatory=$True)]
+        [string]$Serial
+    )
+    $cacheObj = Get-Content "$($env:TEMP)\ODJ-Extender-Cache.json" -ErrorAction SilentlyContinue | ConvertFrom-Json
+    if($cacheObj -eq $null){
+        $cache = @{}
+    } else {
+        $cache = @{}
+        foreach ($property in $cacheObj.PSObject.Properties) {
+            $cache[$property.Name] = $property.Value
+        }
+    }
+    if($null -eq $cache){
+        return $false
+    } else {
+        $LastTime = $cache[$Serial]
+        if($null -eq $LastTime){
+            Write-Log "Cache - No Cache Entry"
+            return $false
+        } else {
+            Write-Log "Cache - Time in JSON: $(([DateTime]$LastTime).AddMinutes(1))"
+            Write-Log "Cache - Current Time: $([DateTime]::UtcNow)"
+            if(([DateTime]$LastTime).AddMinutes($ttlcache) -gt ([DateTime]::UtcNow)){
+                return $true
+            } else {
+                return $false
+            }
+        }
+    }
+}
 #endregion
 
 #region Add this region to the initialization section of the existing ODJ-Extender Script
@@ -53,6 +111,13 @@ try{
         Start-Sleep -Seconds $RetryDelay
         $intuneDevice = Get-IntuneManagedDevice -managedDeviceId $DeviceId
         $DeviceSerial = $intuneDevice.serialNumber
+    }
+
+    if((Invoke-CheckCache -Serial $DeviceSerial)){
+        Write-Log "Device with $DeviceSerial deleted in the last $ttlcache minutes, stop script."
+        exit 0
+    } else {
+        Add-SerialToCache -Serial $DeviceSerial
     }
     
 } catch{
