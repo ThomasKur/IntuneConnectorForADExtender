@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("IntuneConnectorForADExtender.Service")]
-[assembly: AssemblyCopyright("Copyright © 2019 Thomas Kurth")]
+[assembly: AssemblyCopyright("Copyright © 2021 Thomas Kurth")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
